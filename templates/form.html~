@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>{{ title }}</title>
+  </head>
+
+  <body>
+
+    <form action="/authenticate">
+      Name <br>
+      <input type="text" name="name"> <br>
+      <input type="submit" value="Submit">
+    </form>
+    
+  </body>
+
+</html>
