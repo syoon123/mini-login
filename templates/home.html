@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>{{ title }}</title>
+  </head>
+
+  <body>
+
+    {% if existing_acct %}
+    <p>Someone else already has that username!</p>
+    {% endif %}
+    
+    {% if successful_register %}
+    <p>Your account has been created.</p>
+    {% endif %}
+    
+    {% if login == False %}
+    <p>Either the username or password you entered is incorrect.</p>
+    {% endif %}
+    
+    <form action="/authenticate/" method="POST">
+      Username <br>
+      <input type="text" name="user"> <br>
+      Password <br>
+      <input type="text" name="pass"> <br>
+      <input type="submit" name="enter" value="Login">
+      <input type="submit" name="enter" value="Register">
+    </form>
+    
+  </body>
+
+</html>
