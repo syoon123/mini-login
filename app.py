@@ -8,7 +8,7 @@ app.secret_key = '\xab\xa8\xb5o\x17\xc6\xda_+\xd7\xfe\xd0}\xd253\x90k\x9c\rGv\x0
 @app.route("/")
 def home():
     for user in session:
-        return redirect(url_for('auth'))
+        return redirect(url_for('welcome'))
     return redirect(url_for('login'))
 
 @app.route("/welcome/")
